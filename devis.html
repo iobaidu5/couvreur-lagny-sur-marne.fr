@@ -24,8 +24,6 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
 
-  <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
-
   <title>Devis gratuit, estimation de vos travaux en quelques clics</title>
 <meta property="og:title" content="Devis gratuit, estimation de vos travaux en quelques clics" />
 <meta property="og:locale" content="fr_FR" />
@@ -143,42 +141,42 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="prenom" name="prenom"
-                        placeholder="Prenom" />
+                        placeholder="Prenom*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="contact_content-form--input" id="name" name="name" placeholder="Nom" />
+                      <input type="text" class="contact_content-form--input" id="name" name="name" placeholder="Nom*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="address" name="address"
-                        placeholder="Adresse*" />
+                        placeholder="Adresse*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="postal" name="postal"
-                        placeholder="Code postal*" />
+                        placeholder="Code postal*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="ville" name="ville"
-                        placeholder="Ville*" />
+                        placeholder="Ville*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="phone" name="phone"
-                        placeholder="Téléphone" />
+                        placeholder="Téléphone*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <input type="text" class="contact_content-form--input" id="email" name="email"
-                        placeholder="Email" />
+                        placeholder="Email*" required />
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -260,7 +258,7 @@
     <footer class="footer section-y pb-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-6 text-left">
+      <div class="col-lg-3 col-md-6 text-left">
         <a href="./index.html">
           <img src="./assets/img/logo.png" class="footer-logo img-responsive" alt="Vigneron Couverture Logo">
         </a>
@@ -270,7 +268,7 @@
           environs. Pour bénéficier de prestations ciblées et d’un devis gratuit pour un toit solide et de qualité,
           contactez notre équipe de professionnels.</p>
       </div>
-      <div class="col-md-3 col-sm-6 text-left">
+      <div class="col-lg-3 col-md-6 text-left">
         <h2 class="testimonial_item-title">Liens utiles</h2>
         <ul class="menu_content-ul p-l-2">
           <li class="my-2"><a class="menu_content-li--link active"
@@ -287,7 +285,7 @@
                 class="menu_content-li--link-text">Maçonnerie Lagny-sur-Marne</span></a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-6 text-left">
+      <div class="col-lg-3 col-md-6 text-left">
         <h2 class="testimonial_item-title">Zones d'intervention</h2>
         <ul class="menu_content-ul p-l-2">
           <li class="menu_content-li--link">Paris</li>
@@ -300,7 +298,7 @@
           <li class="menu_content-li--link">Val d'Oise</li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-6 text-left">
+      <div class="col-lg-3 col-md-6 text-left">
         <h2 class="testimonial_item-title">Coordonnées</h2>
         <div class="footer-contact-wrapper mb-0">
           <i class="footer-icon fas fa-phone-alt"></i>
@@ -312,7 +310,9 @@
         </div>
         <div class="footer-contact-wrapper">
           <i class="footer-icon fas fa-envelope"></i>
-          <a class="menu_content-li--link2" href="mailto:vigneron.couverture@hotmail.com">vigneron.couverture@hotmail.com</a>
+          <a class="menu_content-li--link2" href="mailto:vigneron.couverture@hotmail.com">
+            <span>vigneron.couverture@hotmail.com</span>
+          </a>
         </div>
         <div class="footer-contact-wrapper">
           <i class="footer-icon fas fa-map-marker-alt" aria-hidden="true"></i>
