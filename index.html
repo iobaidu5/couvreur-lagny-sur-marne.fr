@@ -16,7 +16,7 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./assets/js/popper.min.js"></script>
   <script defer src="./assets/js/bootstrap.min.js"></script>
@@ -68,7 +68,7 @@
 <section class="Navbar_home">
   <div class="container">
     <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
-      <div class="d-flex w-100 align-items-center to-between">
+      <div class="d-flex align-items-center to-between">
         <div class="navbar_image">
           <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/logo.png"
               class="navbar_image-img" alt="RTV Groupe" /></a>
@@ -319,25 +319,28 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-lg-3 col-md-6">
-              <h3 class="menu_counters-title text-white">
+              <h2 class="menu_counters-title text-white">
                 <span class="counter-count">350</span>
-              </h3>
+              </h2>
               <p class="menu_counters-p text-white text-center">Projets concrétisés</p>
             </div>
             <div class="col-lg-3 col-md-6">
-              <h3 class="menu_counters-title counter-count text-white">97<span class="menu_counters-title text-white">%</span></h3>
+              <div class="d-flex">
+                <h2 class="menu_counters-title counter-count text-white">97</h2>
+                <span class="menu_counters-title text-white">%</span>
+              </div>
               <p class="menu_counters-p text-white">Satisfactions client</p>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="d-flex justify-content-center">
-                <h3 class="menu_counters-title counter-count text-white">21</h3>
+                <h2 class="menu_counters-title counter-count text-white">21</h2>
                 <span class="menu_counters-title text-white">ans</span>
               </div>
               <p class="menu_counters-p text-white">Expérience</p>
             </div>
             <div class="col-lg-3 col-md-6">
               <div class="d-flex justify-content-center">
-                <h3 class="menu_counters-title counter-count text-white">10</h3>
+                <h2 class="menu_counters-title counter-count text-white">10</h2>
                 <span class="menu_counters-title text-white">ans</span>
               </div>
               <p class="menu_counters-p text-white">Garantie décennale</p>
@@ -359,62 +362,85 @@
         </div>
       </div>
       <div class="col-md-7">
-        <div class="testimonial_carousel owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="testimonial_carousel">
           <div class="owl-stage-outer">
-            <div class="owl-stage" id="owl" style="width: 4641px; transform: translate3d(-2652px, 0px, 0px); transition: all 3s ease 0s;">
-              <div class="owl-item cloned" style="width: 653px; margin-right: 10px;">
+            <div class="owl-carousel owl" id="owl">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
+                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son
+                    état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et
+                    professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de
+                    l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
                   <h3 class="testimonial_item-title">Diane</h3>
                 </div>
               </div>
-              <div class="owl-item cloned" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Les saisons hivernales nous mènent la vie dure depuis un moment. Nos amis nous ont alors suggéré de faire isoler correctement notre toiture au plus vite.<strong> Grâce à l’intervention rapide de notre couvreur à Lagny-sur-Marne,</strong> votre projet toiture s’est réalisée à un prix attractif et dans de courts délais.</p>
+                  <p class="menu_box-p">Les saisons hivernales nous mènent la vie dure depuis un moment. Nos amis nous
+                    ont alors suggéré de faire isoler correctement notre toiture au plus vite.<strong> Grâce à
+                      l’intervention rapide de notre couvreur à Lagny-sur-Marne,</strong> votre projet toiture s’est
+                    réalisée à un prix attractif et dans de courts délais.</p>
                   <h3 class="testimonial_item-title">Liliane et Tom</h3>
                 </div>
               </div>
-              <div class="owl-item" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Comme notre toiture était extrêmement vétuste et qu’on avait de nombreuses fuites à chaque fois que la pluie tombait, <strong>nous avons décidé de faire appel aux couvreurs de chez Vigneron Couverture.</strong> En quelques jours, nous avons pu profiter d’une nouvelle toiture neuve et ainsi être à l’abri des intempéries pour le reste de l’année. Merci pour votre intervention, nous recommandons certainement.</p>
+                  <p class="menu_box-p">Comme notre toiture était extrêmement vétuste et qu’on avait de nombreuses
+                    fuites à chaque fois que la pluie tombait, <strong>nous avons décidé de faire appel aux couvreurs de
+                      chez Vigneron Couverture.</strong> En quelques jours, nous avons pu profiter d’une nouvelle
+                    toiture neuve et ainsi être à l’abri des intempéries pour le reste de l’année. Merci pour votre
+                    intervention, nous recommandons certainement.</p>
                   <h3 class="testimonial_item-title">Thierry et Patricia</h3>
                 </div>
               </div>
-              <div class="owl-item" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
+                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son
+                    état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et
+                    professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de
+                    l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
                   <h3 class="testimonial_item-title">Diane</h3>
                 </div>
               </div>
-              <div class="owl-item active" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Les saisons hivernales nous mènent la vie dure depuis un moment. Nos amis nous ont alors suggéré de faire isoler correctement notre toiture au plus vite.<strong> Grâce à l’intervention rapide de notre couvreur à Lagny-sur-Marne,</strong> votre projet toiture s’est réalisée à un prix attractif et dans de courts délais.</p>
+                  <p class="menu_box-p">Les saisons hivernales nous mènent la vie dure depuis un moment. Nos amis nous
+                    ont alors suggéré de faire isoler correctement notre toiture au plus vite.<strong> Grâce à
+                      l’intervention rapide de notre couvreur à Lagny-sur-Marne,</strong> votre projet toiture s’est
+                    réalisée à un prix attractif et dans de courts délais.</p>
                   <h3 class="testimonial_item-title">Liliane et Tom</h3>
                 </div>
               </div>
-              <div class="owl-item cloned" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Comme notre toiture était extrêmement vétuste et qu’on avait de nombreuses fuites à chaque fois que la pluie tombait, <strong>nous avons décidé de faire appel aux couvreurs de chez Vigneron Couverture.</strong> En quelques jours, nous avons pu profiter d’une nouvelle toiture neuve et ainsi être à l’abri des intempéries pour le reste de l’année. Merci pour votre intervention, nous recommandons certainement.</p>
+                  <p class="menu_box-p">Comme notre toiture était extrêmement vétuste et qu’on avait de nombreuses
+                    fuites à chaque fois que la pluie tombait, <strong>nous avons décidé de faire appel aux couvreurs de
+                      chez Vigneron Couverture.</strong> En quelques jours, nous avons pu profiter d’une nouvelle
+                    toiture neuve et ainsi être à l’abri des intempéries pour le reste de l’année. Merci pour votre
+                    intervention, nous recommandons certainement.</p>
                   <h3 class="testimonial_item-title">Thierry et Patricia</h3>
                 </div>
               </div>
-              <div class="owl-item cloned" style="width: 653px; margin-right: 10px;">
+              <div class="">
                 <div class="testimonial_item">
-                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
+                  <p class="menu_box-p">Je dois dire que mon toit a tenu de nombreuses années sans entretien, d’où son
+                    état actuel. Heureusement, une amie m’a chaudement recommandé les couvreurs sympathiques et
+                    professionnels de Lagny-sur-Marne pour tout remettre à neuf. Je suis ravie, cela a redonné de
+                    l’allure à mon toit. Merci encore ! je vous rappellerais sûrement pour ma façade.</p>
                   <h3 class="testimonial_item-title">Diane</h3>
                 </div>
               </div>
             </div>
           </div>
-          <div class="owl-nav disabled">
+          <!-- <div class="owl-nav disabled">
             <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
             <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
-          </div>
-          <div class="owl-dots">
+          </div> -->
+          <!-- <div class="owl-dots">
             <button role="button" class="owl-dot"><span></span></button>
             <button role="button" class="owl-dot"><span></span></button>
             <button role="button" class="owl-dot active"><span></span></button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -427,10 +453,14 @@
       <div class="col-12">
         <h2 class="menu_content-title text-white text-shad">Un service de couvreurs fiables à Lagny-sur-Marne</h2>
         <p class="menu_box-p text-white text-shad">
-          Des travaux de charpente à l’installation de couverture, en passant par l’entretien ou la réparation de toitures vétustes et l’isolation, l’équipe de couvreurs à Lagny-sur-Marne répond toujours favorablement à chaque demande de prestations de ses clients. <strong>Nous offrons d’ailleurs une garantie fiable de votre toit.</strong>
+          Des travaux de charpente à l’installation de couverture, en passant par l’entretien ou la réparation de
+          toitures vétustes et l’isolation, l’équipe de couvreurs à Lagny-sur-Marne répond toujours favorablement à
+          chaque demande de prestations de ses clients. <strong>Nous offrons d’ailleurs une garantie fiable de votre
+            toit.</strong>
         </p>
         <p class="menu_box-p text-white text-shad">
-          Parce que la toiture est un élément essentiel du confort, nous nous engageons à mener à bien tous vos projets couverture-toiture.
+          Parce que la toiture est un élément essentiel du confort, nous nous engageons à mener à bien tous vos projets
+          couverture-toiture.
         </p>
       </div>
     </div>
@@ -440,10 +470,12 @@
         <div class="service-box">
           <div class="service-box-body text-center">
             <div class="row">
-              <div class="col-lg-3"><div class="service-icon"><i class="fas fa-trophy"></i></div></div>
+              <div class="col-lg-3">
+                <div class="service-icon"><i class="fas fa-trophy"></i></div>
+              </div>
               <div class="col-lg-9">
-                <h3 class="testimonial_item-title">Une entreprise réglementée</h3>
-                <p class="menu_box-p text-left">Des toitures réglementées et qualifiées</p>
+                <h3 class="testimonial_item-title to-white">Une entreprise réglementée</h3>
+                <p class="menu_box-p text-left to-white">Des toitures réglementées et qualifiées</p>
               </div>
             </div>
           </div>
@@ -453,10 +485,12 @@
         <div class="service-box">
           <div class="service-box-body text-center">
             <div class="row">
-              <div class="col-lg-3"><div class="service-icon"><i class="fas fa-star"></i></div></div>
+              <div class="col-lg-3">
+                <div class="service-icon"><i class="fas fa-star"></i></div>
+              </div>
               <div class="col-lg-9">
-                <h3 class="testimonial_item-title">Des procédés contemporains</h3>
-                <p class="menu_box-p text-left">Nous optimisons nos interventions avec l’usage d’outils modernes</p>
+                <h3 class="testimonial_item-title to-white">Des procédés contemporains</h3>
+                <p class="menu_box-p text-left to-white">Nous optimisons nos interventions avec l’usage d’outils modernes</p>
               </div>
             </div>
           </div>
@@ -466,10 +500,12 @@
         <div class="service-box">
           <div class="service-box-body text-center">
             <div class="row">
-              <div class="col-lg-3"><div class="service-icon"><i class="fas fa-tint"></i></div></div>
+              <div class="col-lg-3">
+                <div class="service-icon"><i class="fas fa-tint"></i></div>
+              </div>
               <div class="col-lg-9">
-                <h3 class="testimonial_item-title">Des couvreurs certifiés</h3>
-                <p class="menu_box-p text-left">Nos artisans expérimentés assurent vos projets</p>
+                <h3 class="testimonial_item-title to-white">Des couvreurs certifiés</h3>
+                <p class="menu_box-p text-left to-white">Nos artisans expérimentés assurent vos projets</p>
               </div>
             </div>
           </div>
@@ -485,13 +521,18 @@
       <div class="col-md-6">
         <div class="menu_content">
           <h2 class="menu_content-title">COUVREURS LAGNY-SUR-MARNE, LE PROFESSIONNEL QU’IL VOUS FAUT</h2>
-          <p class="menu_box-p">Prêtons une attention particulière à la qualité de matériaux utilisés pour vous installer une nouvelle toiture ou encore pour réaliser un ravalement de façade, <strong>tous les chantiers entrepris par notre couvreur de Lagny-sur-Marne sont effectifs et durables.</strong></p>
-          <p class="menu_box-p">Toutes nos prestations sont encadrées par Monsieur Jean-Pierre Vigneron, un expert des services liés à la toiture pour satisfaire au mieux tous nos clients de la commune Lagny-sur-Marne et ses environs.</p>
+          <p class="menu_box-p">Prêtons une attention particulière à la qualité de matériaux utilisés pour vous
+            installer une nouvelle toiture ou encore pour réaliser un ravalement de façade, <strong>tous les chantiers
+              entrepris par notre couvreur de Lagny-sur-Marne sont effectifs et durables.</strong></p>
+          <p class="menu_box-p">Toutes nos prestations sont encadrées par Monsieur Jean-Pierre Vigneron, un expert des
+            services liés à la toiture pour satisfaire au mieux tous nos clients de la commune Lagny-sur-Marne et ses
+            environs.</p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="service_content">
-          <p class="menu_box-p">Afin d’optimiser nos interventions, notre équipe se met régulièrement à jour concernant les outils et les réglementations en vigueur appliquées dans nos services :</p>
+          <p class="menu_box-p">Afin d’optimiser nos interventions, notre équipe se met régulièrement à jour concernant
+            les outils et les réglementations en vigueur appliquées dans nos services :</p>
           <ul class="menu_content-ul">
             <li class="menu_content-li">Travaux d'installation de couverture</li>
             <li class="menu_content-li">Travaux d’entretien de toits</li>
@@ -512,11 +553,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="menu_content-title" style="margin-bottom: 75px;">Comment fonctionnons-nous ?</h2>
+        <h3 class="menu_content-title" style="margin-bottom: 75px;">Comment fonctionnons-nous ?</h3>
       </div>
       <div class="col-md-7">
         <p class="menu_box-p">
-          Si vous souhaitez faire appel à nos services, vous devrez nous envoyer notre formulaire de contact dûment rempli en ligne 
+          Si vous souhaitez faire appel à nos services, vous devrez nous envoyer notre formulaire de contact dûment
+          rempli en ligne
           <strong>ou nous appeler au 09 84 42 15 79.</strong> Notre service reviendra rapidement vers vous.
         </p>
         <div class="accordion" id="accordion">
@@ -542,7 +584,8 @@
             </h3>
             <div id="collapse2" class="collapse" data-parent="#accordion">
               <div class="accordion-body">
-                <p class="menu_content-p">Fort de 20 ans d’expérience en couverture-toiture, nos artisans professionnels ont développé leur savoir-faire dans la zinguerie et la charpenterie.</p>
+                <p class="menu_content-p">Fort de 20 ans d’expérience en couverture-toiture, nos artisans professionnels
+                  ont développé leur savoir-faire dans la zinguerie et la charpenterie.</p>
               </div>
             </div>
           </div>
@@ -555,7 +598,9 @@
             </h3>
             <div id="collapse3" class="collapse" data-parent="#accordion">
               <div class="accordion-body">
-                <p class="menu_content-p">Dans les cas urgents comme les fuites ou les tuiles cassées, nous intervenons immédiatement. Pour des chantiers de rénovation et de pose de toiture neuve, nous vous en dirons plus après un premier contact selon l’ampleur des travaux.</p>
+                <p class="menu_content-p">Dans les cas urgents comme les fuites ou les tuiles cassées, nous intervenons
+                  immédiatement. Pour des chantiers de rénovation et de pose de toiture neuve, nous vous en dirons plus
+                  après un premier contact selon l’ampleur des travaux.</p>
               </div>
             </div>
           </div>
@@ -576,7 +621,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <h2 class="menu_content-title" style="margin-bottom: 75px;">Nos réalisations</h2> 
+        <h2 class="menu_content-title" style="margin-bottom: 75px;">Nos réalisations</h2>
       </div>
       <div class="col-12">
         <div class="carousel owl-carousel owl-theme">
@@ -585,7 +630,8 @@
               <div class="overlay">
                 <h3 class="testimonial_item-title">Après</h3>
               </div>
-              <img src="./assets/img/toiture_apres_renovation.jpg" alt="Toiture après rénovation" class="img-responsive">
+              <img src="./assets/img/toiture_apres_renovation.jpg" alt="Toiture après rénovation"
+                class="img-responsive">
             </a>
           </div>
           <div class="item">
@@ -597,7 +643,7 @@
             </a>
           </div>
           <div class="item">
-            <a href="./assets/img/apres1.jpg" data-lightbox="gallery">
+            <a href="./assets/img/apres1.jpg" alt="Toiture en cours de finalisation" title="Toiture en cours de finalisation" data-lightbox="gallery">
               <div class="overlay">
                 <h3 class="testimonial_item-title">Après</h3>
               </div>
@@ -613,14 +659,12 @@
             </a>
           </div>
         </div>
-      </div>
       <div class="menu_content-link d-flex justify-content-center mx-auto mt-5 pt-5">
         <a href="./galerie.html" class="menu_content-link--a">Nos réalisations</a>
       </div>
     </div>
   </div>
 </section>
-
     </div>
     <div class="fixphone">
       <a href="tel:09 84 42 15 79" title="09 84 42 15 79" class="button one phoneone"><i
@@ -641,8 +685,8 @@
           contactez notre équipe de professionnels.</p>
       </div>
       <div class="col-md-3 col-sm-6 text-left">
-        <h3 class="testimonial_item-title">Liens utiles</h3>
-        <ul class="menu_content-ul">
+        <h2 class="testimonial_item-title">Liens utiles</h2>
+        <ul class="menu_content-ul p-l-2">
           <li class="my-2"><a class="menu_content-li--link active"
               href="https://www.couvreur-lagny-sur-marne.fr/">Accueil</a></li>
           <li class="my-2"><a class="menu_content-li--link" href="./vigneron-couverture.html">Vigneron
@@ -650,7 +694,7 @@
           <li class="my-2"><a class="menu_content-li--link" href="./nos-services.html">Nos services</a></li>
           <li class="my-2"><a class="menu_content-li--link" href="./zone.html">Zone d'intervention</a></li>
           <li class="my-2"><a class="menu_content-li--link" href="./galerie.html">Nos réalisations</a></li>
-          <li class="my-2"><a class="menu_content-li--link" href="./contact.html">Contact</a></li>
+          <li class="my-2"><a class="menu_content-li--link" href="contact">Contact</a></li>
           <li class="my-2"><a class="menu_content-li--link" href="./mentions-legales.html">Mentions légales</a>
           </li>
           <li class="my-2"><a class="menu_content-li--link" href="./maconnerie-lagny-sur-marne.html"><span
@@ -658,8 +702,8 @@
         </ul>
       </div>
       <div class="col-md-3 col-sm-6 text-left">
-        <h3 class="testimonial_item-title">Zones d'intervention</h3>
-        <ul class="menu_content-ul">
+        <h2 class="testimonial_item-title">Zones d'intervention</h2>
+        <ul class="menu_content-ul p-l-2">
           <li class="menu_content-li--link">Paris</li>
           <li class="menu_content-li--link">Seine-et-Marne</li>
           <li class="menu_content-li--link">Yvelines</li>
@@ -671,10 +715,14 @@
         </ul>
       </div>
       <div class="col-md-3 col-sm-6 text-left">
-        <h3 class="testimonial_item-title">Coordonnées</h3>
-        <div class="footer-contact-wrapper">
+        <h2 class="testimonial_item-title">Coordonnées</h2>
+        <div class="footer-contact-wrapper mb-0">
           <i class="footer-icon fas fa-phone-alt"></i>
           <a class="menu_content-li--link2" href="tel:09 84 42 15 79">09 84 42 15 79</a>
+        </div>
+        <div class="footer-contact-wrapper mt-0">
+          <i class="footer-icon fas fa-mobile-alt"></i>
+          <a class="menu_content-li--link2" href="tel:06 27 17 27 38">06 27 17 27 38</a>
         </div>
         <div class="footer-contact-wrapper">
           <i class="footer-icon fas fa-envelope"></i>
